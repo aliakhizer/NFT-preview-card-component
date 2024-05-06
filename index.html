@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | NFT preview card component</title>
 
@@ -26,14 +32,16 @@
     </style>
   </head>
   <body>
-    
     <main>
       <div class="artwork-card">
-        <img
-          src="images/image-equilibrium.jpg"
-          alt="shadow box"
-          class="artwork-card__image"
-        />
+        <div class="image_container">
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="shadow box"
+            class="artwork-card__image"
+          />
+          <img src="images/icon-view.svg" alt="icon view" />
+        </div>
         <div class="artwork-card__details">
           <h2 class="artwork-card__title">Equilibrium #3429</h2>
           <p class="artwork-card__description">
@@ -43,17 +51,17 @@
         <div class="artwork-card__offer">
           <div class="artwork-card__price">
             <img src="./images/icon-ethereum.svg" alt="" />
-            <p class="artwork-card__ethereum-price">0.041 ETH</p>
+            <span class="artwork-card__ethereum-price">0.041 ETH</span>
           </div>
           <div class="artwork-card__time-left">
             <img src="images/icon-clock.svg" alt="clock" class="clock__icon" />
-            <p class="artwork-card__days-left">3 days left</p>
+            <span class="artwork-card__days-left">3 days left</span>
           </div>
         </div>
-
+        <div class="divider"></div>
         <footer class="artist-details">
           <img src="images/image-avatar.png" alt="jules" />
-          <p class="artist-details__name">Creation by Jules Wyvern</p>
+          <p class="artist-details__name">Creation by <b>Jules Wyvern</b></p>
         </footer>
       </div>
     </main>
