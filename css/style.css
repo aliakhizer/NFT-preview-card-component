@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: hsl(217, 54%, 11%); */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.artwork-card {
+  padding: 20px;
+  border: 1px solid red; 
+}
